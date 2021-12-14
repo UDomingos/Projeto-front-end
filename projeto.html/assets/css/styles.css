@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;400;900&display=swap");
 
 :root {
-  --main-color: #e23636;
+  --main-color: #6a72be;
 }
 
 body {
   font-family: "Noto Sans JP";
-  font-weight: 400;
+  font-weight: 200;
   color: #333333;
   background-color: #ededed;
   margin: 0;
@@ -103,21 +103,25 @@ section {
 }
 
 
-img {
-  max-width: 100%;
-  width: 550px;
-  height: 600px;
-  border-radius: 50px;
-  margin: 0px 0px;
+img{
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  border-width: 10px;
+  border-image: url(boder.png) 30 30 repeat;
+  -moz-border-image: url(boder.png) 30 30 repeat; 
+  -webkit-border-image: url(boder.png)30 30 repeat;
+  -o-border-image: url(boder.png)30 30 repeat;
   object-fit: cover;
   margin-right: 2px
 }
 
 .card {
   border: 1px solid #bbb;
-  border-radius: 50px;
+  border:solid 1px;
   padding: 30px;
   margin: 0px 0px;
+  box-shadow: 10px 10px 10px 5px;
 }
 
 form {
