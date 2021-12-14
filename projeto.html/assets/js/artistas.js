@@ -5,7 +5,7 @@ button.addEventListener("click",function(){
   
 })
 async function fetchData ( )  {
-  const response = await fetch("http://localhost:8080/artistas") ;//modificar aplicação para servidor local
+  const response = await fetch("https://meu-projeto-api.herokuapp.com/artistas") ;//modificar aplicação para servidor local
   const data = await response.json();
 
  data .forEach( (artistas) =>{
