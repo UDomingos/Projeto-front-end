@@ -6,7 +6,7 @@ form.addEventListener("submit",async(event)  =>{
 const formData = new FormData(form);
 const options ={method:"post",body:formData};
 
- const response = await fetch("https://meu-projeto-api.herokuapp.com/musicas",options );
+ const response = await fetch("http://meu-projeto-api.herokuapp.com/musicas",options );
 console.log(response);
  if (response.ok){
     alert("Musica cadastrada com sucesso !");
