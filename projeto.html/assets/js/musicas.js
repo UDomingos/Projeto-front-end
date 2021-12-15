@@ -1,7 +1,7 @@
 const section = document.querySelector("section");
 
 async function fetchData(){
-    const response = await fetch("https://meu-projeto-api.herokuapp.com/musicas");
+    const response = await fetch("http://meu-projeto-api.herokuapp.com/musicas");
 const data = await response.json();
 
 data.forEach( musicas => {
